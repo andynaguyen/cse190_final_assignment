@@ -1,0 +1,60 @@
+{
+    "pipe_map": [
+        ["C","-","H","H","-"],
+        ["C","-","H","-","-"],
+        ["C","-","H","-","-"],
+        ["C","C","H","H","H"]
+    ],
+    "texture_map": [
+        ["S","S","S","S","R"],
+        ["R","R","S","R","R"],
+        ["R","S","S","S","S"],
+        ["S","R","R","S","R"]
+    ],
+	"room_layout": [
+		["_","_","_","_","_"],
+		["_","X","X","X","_"],
+		["_","X","G","_","_"],
+		["_","X","_","_","_"]
+	],
+    "possible_moves": [
+        [1,0],
+        [-1,0],
+        [0,1],
+        [0,-1]
+    ],
+	"walls": [
+		[1,1],
+		[1,2],
+		[1,3],
+		[2,1],
+		[3,1]
+	],
+	"map_size": [4,5],
+	"pits": [],
+	"goal": [2,2],
+    "starting_pos": [0,4],
+    "temp_noise_std_dev": 10,
+    "prob_tex_correct": 0.99,
+    "uncertain_motion": true,
+    "prob_move_correct": 0.75,
+    "seed": 0,
+	"max_iterations": 1000,
+    "threshold_difference": 0.00001,
+
+
+    "reward_for_each_step": -1.00,
+    "reward_for_hitting_wall": -1.00,
+    "reward_for_reaching_goal": 5.0,
+    "reward_for_falling_in_pit": -5.0,
+
+    "discount_factor": 0.99,
+
+    "prob_move_forward": 1.0,
+    "prob_move_backward": 0.0,
+    "prob_move_left": 0.0,
+    "prob_move_right": 0.0,
+
+	"threshold": 0.5
+
+}
